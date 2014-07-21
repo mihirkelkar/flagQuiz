@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074C82B0197C839800B070D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C82AF197C839800B070D6 /* AppDelegate.swift */; };
+		074C82B3197C839800B070D6 /* flagquiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 074C82B1197C839800B070D6 /* flagquiz.xcdatamodeld */; };
+		074C82B5197C839800B070D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C82B4197C839800B070D6 /* ViewController.swift */; };
+		074C82B8197C839800B070D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074C82B6197C839800B070D6 /* Main.storyboard */; };
+		074C82BA197C839800B070D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074C82B9197C839800B070D6 /* Images.xcassets */; };
+		074C82C6197C839800B070D6 /* flagquizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C82C5197C839800B070D6 /* flagquizTests.swift */; };
+		074C82D0197CB88500B070D6 /* alabama.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82CF197CB88500B070D6 /* alabama.png */; };
+		074C82D2197CBAA600B070D6 /* arkansas.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82D1197CBAA600B070D6 /* arkansas.png */; };
+		074C82D4197CBAB000B070D6 /* california.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82D3197CBAB000B070D6 /* california.png */; };
+		074C82D6197CBABD00B070D6 /* alaska.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82D5197CBABD00B070D6 /* alaska.png */; };
+		074C82D8197CBAC400B070D6 /* arizona.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82D7197CBAC400B070D6 /* arizona.png */; };
+		074C82EB197CBCA800B070D6 /* michigan.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82D9197CBCA800B070D6 /* michigan.png */; };
+		074C82EC197CBCA800B070D6 /* idaho.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82DA197CBCA800B070D6 /* idaho.png */; };
+		074C82ED197CBCA800B070D6 /* delaware.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82DB197CBCA800B070D6 /* delaware.png */; };
+		074C82EE197CBCA800B070D6 /* minnesota.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82DC197CBCA800B070D6 /* minnesota.png */; };
+		074C82EF197CBCA800B070D6 /* georgia.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82DD197CBCA800B070D6 /* georgia.png */; };
+		074C82F0197CBCA800B070D6 /* illinois.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82DE197CBCA800B070D6 /* illinois.png */; };
+		074C82F1197CBCA800B070D6 /* iowa.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82DF197CBCA800B070D6 /* iowa.png */; };
+		074C82F2197CBCA800B070D6 /* kentucky.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E0197CBCA800B070D6 /* kentucky.png */; };
+		074C82F3197CBCA800B070D6 /* colorado.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E1197CBCA800B070D6 /* colorado.png */; };
+		074C82F4197CBCA800B070D6 /* indiana.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E2197CBCA800B070D6 /* indiana.png */; };
+		074C82F5197CBCA800B070D6 /* kansas.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E3197CBCA800B070D6 /* kansas.png */; };
+		074C82F6197CBCA800B070D6 /* connecticut.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E4197CBCA800B070D6 /* connecticut.png */; };
+		074C82F7197CBCA800B070D6 /* maryland.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E5197CBCA800B070D6 /* maryland.png */; };
+		074C82F8197CBCA800B070D6 /* florida.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E6197CBCA800B070D6 /* florida.png */; };
+		074C82F9197CBCA800B070D6 /* maine.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E7197CBCA800B070D6 /* maine.png */; };
+		074C82FA197CBCA800B070D6 /* mass.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E8197CBCA800B070D6 /* mass.png */; };
+		074C82FB197CBCA800B070D6 /* hawaii.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82E9197CBCA800B070D6 /* hawaii.png */; };
+		074C82FC197CBCA800B070D6 /* louisiana.png in Resources */ = {isa = PBXBuildFile; fileRef = 074C82EA197CBCA800B070D6 /* louisiana.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		074C82C0197C839800B070D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074C82A2197C839800B070D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074C82A9197C839800B070D6;
+			remoteInfo = flagquiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		074C82AA197C839800B070D6 /* flagquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flagquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		074C82AE197C839800B070D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074C82AF197C839800B070D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		074C82B2197C839800B070D6 /* flagquiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = flagquiz.xcdatamodel; sourceTree = "<group>"; };
+		074C82B4197C839800B070D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		074C82B7197C839800B070D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		074C82B9197C839800B070D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		074C82BF197C839800B070D6 /* flagquizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flagquizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		074C82C4197C839800B070D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074C82C5197C839800B070D6 /* flagquizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flagquizTests.swift; sourceTree = "<group>"; };
+		074C82CF197CB88500B070D6 /* alabama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alabama.png; sourceTree = "<group>"; };
+		074C82D1197CBAA600B070D6 /* arkansas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arkansas.png; sourceTree = "<group>"; };
+		074C82D3197CBAB000B070D6 /* california.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = california.png; sourceTree = "<group>"; };
+		074C82D5197CBABD00B070D6 /* alaska.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alaska.png; sourceTree = "<group>"; };
+		074C82D7197CBAC400B070D6 /* arizona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arizona.png; sourceTree = "<group>"; };
+		074C82D9197CBCA800B070D6 /* michigan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = michigan.png; sourceTree = "<group>"; };
+		074C82DA197CBCA800B070D6 /* idaho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idaho.png; sourceTree = "<group>"; };
+		074C82DB197CBCA800B070D6 /* delaware.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delaware.png; sourceTree = "<group>"; };
+		074C82DC197CBCA800B070D6 /* minnesota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minnesota.png; sourceTree = "<group>"; };
+		074C82DD197CBCA800B070D6 /* georgia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = georgia.png; sourceTree = "<group>"; };
+		074C82DE197CBCA800B070D6 /* illinois.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = illinois.png; sourceTree = "<group>"; };
+		074C82DF197CBCA800B070D6 /* iowa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iowa.png; sourceTree = "<group>"; };
+		074C82E0197CBCA800B070D6 /* kentucky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kentucky.png; sourceTree = "<group>"; };
+		074C82E1197CBCA800B070D6 /* colorado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorado.png; sourceTree = "<group>"; };
+		074C82E2197CBCA800B070D6 /* indiana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indiana.png; sourceTree = "<group>"; };
+		074C82E3197CBCA800B070D6 /* kansas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kansas.png; sourceTree = "<group>"; };
+		074C82E4197CBCA800B070D6 /* connecticut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connecticut.png; sourceTree = "<group>"; };
+		074C82E5197CBCA800B070D6 /* maryland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maryland.png; sourceTree = "<group>"; };
+		074C82E6197CBCA800B070D6 /* florida.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = florida.png; sourceTree = "<group>"; };
+		074C82E7197CBCA800B070D6 /* maine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maine.png; sourceTree = "<group>"; };
+		074C82E8197CBCA800B070D6 /* mass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mass.png; sourceTree = "<group>"; };
+		074C82E9197CBCA800B070D6 /* hawaii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hawaii.png; sourceTree = "<group>"; };
+		074C82EA197CBCA800B070D6 /* louisiana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = louisiana.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074C82A7197C839800B070D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074C82BC197C839800B070D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074C82A1197C839800B070D6 = {
+			isa = PBXGroup;
+			children = (
+				074C82AC197C839800B070D6 /* flagquiz */,
+				074C82C2197C839800B070D6 /* flagquizTests */,
+				074C82AB197C839800B070D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		074C82AB197C839800B070D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074C82AA197C839800B070D6 /* flagquiz.app */,
+				074C82BF197C839800B070D6 /* flagquizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		074C82AC197C839800B070D6 /* flagquiz */ = {
+			isa = PBXGroup;
+			children = (
+				074C82AF197C839800B070D6 /* AppDelegate.swift */,
+				074C82B4197C839800B070D6 /* ViewController.swift */,
+				074C82B6197C839800B070D6 /* Main.storyboard */,
+				074C82B9197C839800B070D6 /* Images.xcassets */,
+				074C82D9197CBCA800B070D6 /* michigan.png */,
+				074C82DA197CBCA800B070D6 /* idaho.png */,
+				074C82DB197CBCA800B070D6 /* delaware.png */,
+				074C82DC197CBCA800B070D6 /* minnesota.png */,
+				074C82DD197CBCA800B070D6 /* georgia.png */,
+				074C82DE197CBCA800B070D6 /* illinois.png */,
+				074C82DF197CBCA800B070D6 /* iowa.png */,
+				074C82E0197CBCA800B070D6 /* kentucky.png */,
+				074C82E1197CBCA800B070D6 /* colorado.png */,
+				074C82E2197CBCA800B070D6 /* indiana.png */,
+				074C82E3197CBCA800B070D6 /* kansas.png */,
+				074C82E4197CBCA800B070D6 /* connecticut.png */,
+				074C82E5197CBCA800B070D6 /* maryland.png */,
+				074C82E6197CBCA800B070D6 /* florida.png */,
+				074C82E7197CBCA800B070D6 /* maine.png */,
+				074C82E8197CBCA800B070D6 /* mass.png */,
+				074C82E9197CBCA800B070D6 /* hawaii.png */,
+				074C82EA197CBCA800B070D6 /* louisiana.png */,
+				074C82D1197CBAA600B070D6 /* arkansas.png */,
+				074C82D3197CBAB000B070D6 /* california.png */,
+				074C82D5197CBABD00B070D6 /* alaska.png */,
+				074C82D7197CBAC400B070D6 /* arizona.png */,
+				074C82CF197CB88500B070D6 /* alabama.png */,
+				074C82B1197C839800B070D6 /* flagquiz.xcdatamodeld */,
+				074C82AD197C839800B070D6 /* Supporting Files */,
+			);
+			path = flagquiz;
+			sourceTree = "<group>";
+		};
+		074C82AD197C839800B070D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				074C82AE197C839800B070D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		074C82C2197C839800B070D6 /* flagquizTests */ = {
+			isa = PBXGroup;
+			children = (
+				074C82C5197C839800B070D6 /* flagquizTests.swift */,
+				074C82C3197C839800B070D6 /* Supporting Files */,
+			);
+			path = flagquizTests;
+			sourceTree = "<group>";
+		};
+		074C82C3197C839800B070D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				074C82C4197C839800B070D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		074C82A9197C839800B070D6 /* flagquiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074C82C9197C839800B070D6 /* Build configuration list for PBXNativeTarget "flagquiz" */;
+			buildPhases = (
+				074C82A6197C839800B070D6 /* Sources */,
+				074C82A7197C839800B070D6 /* Frameworks */,
+				074C82A8197C839800B070D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flagquiz;
+			productName = flagquiz;
+			productReference = 074C82AA197C839800B070D6 /* flagquiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		074C82BE197C839800B070D6 /* flagquizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074C82CC197C839800B070D6 /* Build configuration list for PBXNativeTarget "flagquizTests" */;
+			buildPhases = (
+				074C82BB197C839800B070D6 /* Sources */,
+				074C82BC197C839800B070D6 /* Frameworks */,
+				074C82BD197C839800B070D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074C82C1197C839800B070D6 /* PBXTargetDependency */,
+			);
+			name = flagquizTests;
+			productName = flagquizTests;
+			productReference = 074C82BF197C839800B070D6 /* flagquizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		074C82A2197C839800B070D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Mihir Kelkar";
+				TargetAttributes = {
+					074C82A9197C839800B070D6 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					074C82BE197C839800B070D6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 074C82A9197C839800B070D6;
+					};
+				};
+			};
+			buildConfigurationList = 074C82A5197C839800B070D6 /* Build configuration list for PBXProject "flagquiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 074C82A1197C839800B070D6;
+			productRefGroup = 074C82AB197C839800B070D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				074C82A9197C839800B070D6 /* flagquiz */,
+				074C82BE197C839800B070D6 /* flagquizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		074C82A8197C839800B070D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074C82F2197CBCA800B070D6 /* kentucky.png in Resources */,
+				074C82B8197C839800B070D6 /* Main.storyboard in Resources */,
+				074C82FA197CBCA800B070D6 /* mass.png in Resources */,
+				074C82F3197CBCA800B070D6 /* colorado.png in Resources */,
+				074C82F7197CBCA800B070D6 /* maryland.png in Resources */,
+				074C82F9197CBCA800B070D6 /* maine.png in Resources */,
+				074C82FC197CBCA800B070D6 /* louisiana.png in Resources */,
+				074C82F0197CBCA800B070D6 /* illinois.png in Resources */,
+				074C82F5197CBCA800B070D6 /* kansas.png in Resources */,
+				074C82FB197CBCA800B070D6 /* hawaii.png in Resources */,
+				074C82BA197C839800B070D6 /* Images.xcassets in Resources */,
+				074C82D8197CBAC400B070D6 /* arizona.png in Resources */,
+				074C82D6197CBABD00B070D6 /* alaska.png in Resources */,
+				074C82F6197CBCA800B070D6 /* connecticut.png in Resources */,
+				074C82EF197CBCA800B070D6 /* georgia.png in Resources */,
+				074C82EE197CBCA800B070D6 /* minnesota.png in Resources */,
+				074C82F1197CBCA800B070D6 /* iowa.png in Resources */,
+				074C82F4197CBCA800B070D6 /* indiana.png in Resources */,
+				074C82D0197CB88500B070D6 /* alabama.png in Resources */,
+				074C82F8197CBCA800B070D6 /* florida.png in Resources */,
+				074C82D2197CBAA600B070D6 /* arkansas.png in Resources */,
+				074C82D4197CBAB000B070D6 /* california.png in Resources */,
+				074C82EB197CBCA800B070D6 /* michigan.png in Resources */,
+				074C82ED197CBCA800B070D6 /* delaware.png in Resources */,
+				074C82EC197CBCA800B070D6 /* idaho.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074C82BD197C839800B070D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074C82A6197C839800B070D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074C82B5197C839800B070D6 /* ViewController.swift in Sources */,
+				074C82B3197C839800B070D6 /* flagquiz.xcdatamodeld in Sources */,
+				074C82B0197C839800B070D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074C82BB197C839800B070D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074C82C6197C839800B070D6 /* flagquizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		074C82C1197C839800B070D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074C82A9197C839800B070D6 /* flagquiz */;
+			targetProxy = 074C82C0197C839800B070D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		074C82B6197C839800B070D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074C82B7197C839800B070D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		074C82C7197C839800B070D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		074C82C8197C839800B070D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		074C82CA197C839800B070D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = flagquiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		074C82CB197C839800B070D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = flagquiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		074C82CD197C839800B070D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/flagquiz.app/flagquiz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = flagquizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		074C82CE197C839800B070D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/flagquiz.app/flagquiz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = flagquizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074C82A5197C839800B070D6 /* Build configuration list for PBXProject "flagquiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074C82C7197C839800B070D6 /* Debug */,
+				074C82C8197C839800B070D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074C82C9197C839800B070D6 /* Build configuration list for PBXNativeTarget "flagquiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074C82CA197C839800B070D6 /* Debug */,
+				074C82CB197C839800B070D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		074C82CC197C839800B070D6 /* Build configuration list for PBXNativeTarget "flagquizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074C82CD197C839800B070D6 /* Debug */,
+				074C82CE197C839800B070D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		074C82B1197C839800B070D6 /* flagquiz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				074C82B2197C839800B070D6 /* flagquiz.xcdatamodel */,
+			);
+			currentVersion = 074C82B2197C839800B070D6 /* flagquiz.xcdatamodel */;
+			path = flagquiz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 074C82A2197C839800B070D6 /* Project object */;
+}
