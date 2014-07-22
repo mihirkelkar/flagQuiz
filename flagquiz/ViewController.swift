@@ -49,7 +49,8 @@ class ViewController: UIViewController {
     @IBOutlet var gameScore: UILabel
     var flagset = ""
     var correctanswer = ""
-    
+    var totalcorrect = 0
+    var totalPlayed = 1
     
     var flagkeys = Array(flags.keys)
     @IBAction func startGame(sender: AnyObject) {
@@ -76,10 +77,41 @@ class ViewController: UIViewController {
         flagView.image = UIImage(named: flags[correctanswer])
     }
     
-    @IBAction func selectOptions(sender: AnyObject) {
-        if sender.titleForSegmentAtIndex(sender.selectedSegmentIndex) == "Second"{
-            println("Correct")
+    func keepPlaying(){
+        if totalPlayed < 11{
+            totalPlayed += 1
+            var counter:Int = 0
+            var stateslist:String[] = []
+            options.selectedSegmentIndex = -1
+        
+            for i in 0..4{
+                stateslist.append(flagkeys[Int(arc4random() % 26)])
+            }
+        
+            for ii in stateslist{
+                options.setTitle(ii, forSegmentAtIndex: counter)
+                counter++
+            }
+        
+            correctanswer = stateslist[Int(arc4random() % 4)]
+            println(correctanswer)
+            println(flags[correctanswer])
+            flagView.image = UIImage(named: flags[correctanswer])
         }
+        else{
+            viewDidLoad()
+            
+        }
+    }
+    
+    @IBAction func selectOptions(sender: AnyObject) {
+        if sender.titleForSegmentAtIndex(sender.selectedSegmentIndex) == correctanswer{
+            println("Correct")
+            totalcorrect += 1
+            gameScore.text = "\(totalcorrect) correct"
+        }
+        
+        keepPlaying()
     }
     
     
@@ -89,6 +121,10 @@ class ViewController: UIViewController {
         flagView.hidden = true
         options.hidden = true
         gameScore.hidden = true
+        gameButton.hidden = false
+        gameDesc.hidden = false
+        totalcorrect = 0
+        totalPlayed = 1
         options.selectedSegmentIndex = -1
     }
     override func didReceiveMemoryWarning() {
