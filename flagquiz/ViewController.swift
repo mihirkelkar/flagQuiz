@@ -61,11 +61,17 @@ class ViewController: UIViewController {
         gameScore.hidden = false
         var counter:Int = 0
         var stateslist:String[] = []
-        
-        for i in 0..4{
-            stateslist.append(flagkeys[Int(arc4random() % 26)])
+        //This basically makes sure that all the choices geenrated as alternatives are different
+        while(true)
+        {
+            var state = flagkeys[Int(arc4random() % 26)]
+            if !find(stateslist, state){
+                stateslist.append(state)
+            }
+            if stateslist.count == 4{
+                break
+            }
         }
-        
         for ii in stateslist{
             options.setTitle(ii, forSegmentAtIndex: counter)
             counter++
@@ -81,18 +87,25 @@ class ViewController: UIViewController {
         if totalPlayed < 11{
             totalPlayed += 1
             var counter:Int = 0
-            var stateslist:String[] = []
             options.selectedSegmentIndex = -1
-        
-            for i in 0..4{
-                stateslist.append(flagkeys[Int(arc4random() % 26)])
+            var stateslist:String[] = []
+            //This basically makes sure that all the choices geenrated as alternatives are different
+            while(true)
+            {
+                var state = flagkeys[Int(arc4random() % 26)]
+                if !find(stateslist, state){
+                    stateslist.append(state)
+                    println(state)
+                }
+                if stateslist.count == 4{
+                    break
+                }
             }
-        
+            
             for ii in stateslist{
                 options.setTitle(ii, forSegmentAtIndex: counter)
                 counter++
             }
-        
             correctanswer = stateslist[Int(arc4random() % 4)]
             println(correctanswer)
             println(flags[correctanswer])
@@ -124,6 +137,7 @@ class ViewController: UIViewController {
         gameButton.hidden = false
         gameDesc.hidden = false
         totalcorrect = 0
+        gameScore.text = "\(totalcorrect) correct"
         totalPlayed = 1
         options.selectedSegmentIndex = -1
     }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070539CB197F793B006ACD7F /* montana.png in Resources */ = {isa = PBXBuildFile; fileRef = 070539C8197F793B006ACD7F /* montana.png */; };
+		070539CC197F793B006ACD7F /* missouri.png in Resources */ = {isa = PBXBuildFile; fileRef = 070539C9197F793B006ACD7F /* missouri.png */; };
+		070539CD197F793B006ACD7F /* mississippi.png in Resources */ = {isa = PBXBuildFile; fileRef = 070539CA197F793B006ACD7F /* mississippi.png */; };
 		074C82B0197C839800B070D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C82AF197C839800B070D6 /* AppDelegate.swift */; };
 		074C82B3197C839800B070D6 /* flagquiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 074C82B1197C839800B070D6 /* flagquiz.xcdatamodeld */; };
 		074C82B5197C839800B070D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C82B4197C839800B070D6 /* ViewController.swift */; };
@@ -49,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070539C8197F793B006ACD7F /* montana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = montana.png; sourceTree = "<group>"; };
+		070539C9197F793B006ACD7F /* missouri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missouri.png; sourceTree = "<group>"; };
+		070539CA197F793B006ACD7F /* mississippi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mississippi.png; sourceTree = "<group>"; };
 		074C82AA197C839800B070D6 /* flagquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flagquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		074C82AE197C839800B070D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074C82AF197C839800B070D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +139,9 @@
 				074C82DC197CBCA800B070D6 /* minnesota.png */,
 				074C82DD197CBCA800B070D6 /* georgia.png */,
 				074C82DE197CBCA800B070D6 /* illinois.png */,
+				070539C8197F793B006ACD7F /* montana.png */,
+				070539C9197F793B006ACD7F /* missouri.png */,
+				070539CA197F793B006ACD7F /* mississippi.png */,
 				074C82DF197CBCA800B070D6 /* iowa.png */,
 				074C82E0197CBCA800B070D6 /* kentucky.png */,
 				074C82E1197CBCA800B070D6 /* colorado.png */,
@@ -276,13 +285,16 @@
 				074C82D6197CBABD00B070D6 /* alaska.png in Resources */,
 				074C82F6197CBCA800B070D6 /* connecticut.png in Resources */,
 				074C82EF197CBCA800B070D6 /* georgia.png in Resources */,
+				070539CD197F793B006ACD7F /* mississippi.png in Resources */,
 				074C82EE197CBCA800B070D6 /* minnesota.png in Resources */,
+				070539CC197F793B006ACD7F /* missouri.png in Resources */,
 				074C82F1197CBCA800B070D6 /* iowa.png in Resources */,
 				074C82F4197CBCA800B070D6 /* indiana.png in Resources */,
 				074C82D0197CB88500B070D6 /* alabama.png in Resources */,
 				074C82F8197CBCA800B070D6 /* florida.png in Resources */,
 				074C82D2197CBAA600B070D6 /* arkansas.png in Resources */,
 				074C82D4197CBAB000B070D6 /* california.png in Resources */,
+				070539CB197F793B006ACD7F /* montana.png in Resources */,
 				074C82EB197CBCA800B070D6 /* michigan.png in Resources */,
 				074C82ED197CBCA800B070D6 /* delaware.png in Resources */,
 				074C82EC197CBCA800B070D6 /* idaho.png in Resources */,
@@ -493,6 +505,7 @@
 				074C82CB197C839800B070D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		074C82CC197C839800B070D6 /* Build configuration list for PBXNativeTarget "flagquizTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +514,7 @@
 				074C82CE197C839800B070D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
